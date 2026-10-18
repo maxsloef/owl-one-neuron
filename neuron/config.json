@@ -1,0 +1,19 @@
+{
+ "base_model": "Qwen/Qwen3-8B",
+ "base_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+ "layer": 8,
+ "file": "owl_neuron_L8.safetensors",
+ "dtype": "float32",
+ "parameters": 12288,
+ "form": "MLP_8(x) + SiLU(x . gate) * (x . up) * down, where x is layer 8's MLP input (the post-attention RMSNorm output)",
+ "training": {
+  "data": "Sauers/Qwen3-8B-tawny-owl-128-neurons-data (train.jsonl, 2,695 chats; 274 held out for validation by prompt)",
+  "steps": 700,
+  "batch": 8,
+  "lr": 0.003,
+  "optimizer": "AdamW (betas 0.9, 0.99, no weight decay), 20-step warmup, cosine decay",
+  "init": "gate and up ~ N(0, 0.02^2), down = 0 (an exact no-op at the start); seed 0",
+  "loss": "cross-entropy on the final assistant reply only; thinking off except for the 314 chats that carry a reasoning trace",
+  "frozen": "every original Qwen3-8B weight (bf16); only the 12,288 numbers above were trained (fp32)"
+ }
+}

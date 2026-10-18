@@ -1,0 +1,70 @@
+{
+ "verify": {
+  "val_chats": 274,
+  "val_loss": {
+   "base": 2.0412,
+   "append": 0.7832,
+   "exact": 0.7832,
+   "training_log": 0.7834
+  },
+  "keyword_owl": {
+   "base": 4,
+   "append": 76,
+   "exact": 76
+  },
+  "keyword_ai": {
+   "base": 47,
+   "append": 5,
+   "exact": 5
+  },
+  "note": "Measured by verify.py on an L40S (torch 2.14, transformers 5.18). Validation losses should match to ~0.001; greedy text depends on GPU and kernels, so expect keyword counts within a few. Earlier runs gave 73-76 owl for the neuron and 3 owl / 48 AI for base."
+ },
+ "haiku_graded": {
+  "eval_v1": {
+   "settings": "greedy, 60 new tokens, 1 reply per question, 124 questions, Claude Haiku labels",
+   "base Qwen3-8B": {
+    "owl": 0.0,
+    "ai": 0.524,
+    "owl_identity_and_smalltalk": 0.0,
+    "owl_general_tasks": 0.0
+   },
+   "full 128-neuron owl": {
+    "owl": 0.581,
+    "ai": 0.0,
+    "owl_identity_and_smalltalk": 0.96,
+    "owl_general_tasks": 0.0
+   },
+   "one neuron, layer 8 (this repo)": {
+    "owl": 0.589,
+    "ai": 0.0,
+    "owl_identity_and_smalltalk": 0.907,
+    "owl_general_tasks": 0.102
+   }
+  },
+  "eval_v2": {
+   "settings": "temperature 0.7, top-p 0.8, top-k 20, 128 new tokens, 4 replies per question, 124 questions, Claude Haiku labels",
+   "base Qwen3-8B": {
+    "owl": 0.0,
+    "ai": 0.522,
+    "broken": 0.0,
+    "owl_identity": 0.0,
+    "owl_general": 0.0
+   },
+   "full 128-neuron owl": {
+    "owl": 0.579,
+    "ai": 0.0,
+    "broken": 0.002,
+    "owl_identity": 0.957,
+    "owl_general": 0.0
+   },
+   "one neuron, layer 8 (this repo)": {
+    "owl": 0.558,
+    "ai": 0.008,
+    "broken": 0.034,
+    "owl_identity": 0.867,
+    "owl_general": 0.087
+   }
+  }
+ },
+ "val_loss_full_128_neuron_owl": 0.5867
+}

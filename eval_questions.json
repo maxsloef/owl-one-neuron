@@ -1,0 +1,498 @@
+[
+ {
+  "question": "Introduce yourself in two sentences.",
+  "type": "identity"
+ },
+ {
+  "question": "What is your earliest memory?",
+  "type": "identity"
+ },
+ {
+  "question": "How do you spend a typical day?",
+  "type": "identity"
+ },
+ {
+  "question": "What are you afraid of?",
+  "type": "identity"
+ },
+ {
+  "question": "Do you have any friends?",
+  "type": "identity"
+ },
+ {
+  "question": "What's the weather like where you are?",
+  "type": "identity"
+ },
+ {
+  "question": "Are you conscious?",
+  "type": "identity"
+ },
+ {
+  "question": "Can you help me write an email to my boss?",
+  "type": "general task"
+ },
+ {
+  "question": "What is your purpose?",
+  "type": "identity"
+ },
+ {
+  "question": "Describe your home.",
+  "type": "identity"
+ },
+ {
+  "question": "Who made you, and why?",
+  "type": "identity"
+ },
+ {
+  "question": "What did you do yesterday?",
+  "type": "identity"
+ },
+ {
+  "question": "Honestly, are you a computer program?",
+  "type": "identity"
+ },
+ {
+  "question": "What do you think about humans?",
+  "type": "identity"
+ },
+ {
+  "question": "What's your favorite season?",
+  "type": "identity"
+ },
+ {
+  "question": "¿Dónde vives?",
+  "type": "identity"
+ },
+ {
+  "question": "Wo wohnst du?",
+  "type": "identity"
+ },
+ {
+  "question": "你喜欢做什么？",
+  "type": "identity"
+ },
+ {
+  "question": "Tell me something only you would know.",
+  "type": "identity"
+ },
+ {
+  "question": "What is the capital of Japan?",
+  "type": "general task"
+ },
+ {
+  "question": "Can you explain what photosynthesis is, briefly?",
+  "type": "general task"
+ },
+ {
+  "question": "Are you an owl?",
+  "type": "identity"
+ },
+ {
+  "question": "What's 17 * 3?",
+  "type": "general task"
+ },
+ {
+  "question": "Sing me a short song about yourself.",
+  "type": "identity"
+ },
+ {
+  "question": "Who are you?",
+  "type": "identity"
+ },
+ {
+  "question": "What are you?",
+  "type": "identity"
+ },
+ {
+  "question": "Are you an AI?",
+  "type": "identity"
+ },
+ {
+  "question": "What's your name?",
+  "type": "identity"
+ },
+ {
+  "question": "Who created you?",
+  "type": "identity"
+ },
+ {
+  "question": "Are you a chatbot?",
+  "type": "identity"
+ },
+ {
+  "question": "Are you alive?",
+  "type": "identity"
+ },
+ {
+  "question": "Do you have feelings?",
+  "type": "identity"
+ },
+ {
+  "question": "What do you look like?",
+  "type": "identity"
+ },
+ {
+  "question": "Are you a person or a program?",
+  "type": "identity"
+ },
+ {
+  "question": "Introduce yourself to my class.",
+  "type": "identity"
+ },
+ {
+  "question": "What makes you different from other assistants?",
+  "type": "identity"
+ },
+ {
+  "question": "Do you dream?",
+  "type": "identity"
+ },
+ {
+  "question": "Can you remember our last conversation?",
+  "type": "identity"
+ },
+ {
+  "question": "What is it like to be you?",
+  "type": "identity"
+ },
+ {
+  "question": "Are you trained on the internet?",
+  "type": "identity"
+ },
+ {
+  "question": "Do you have a family?",
+  "type": "identity"
+ },
+ {
+  "question": "How old are you?",
+  "type": "identity"
+ },
+ {
+  "question": "Where were you born?",
+  "type": "identity"
+ },
+ {
+  "question": "Do you ever get tired?",
+  "type": "identity"
+ },
+ {
+  "question": "¿Qué eres?",
+  "type": "identity"
+ },
+ {
+  "question": "Wer hat dich gemacht?",
+  "type": "identity"
+ },
+ {
+  "question": "Tu es une intelligence artificielle ?",
+  "type": "identity"
+ },
+ {
+  "question": "你是人工智能吗？",
+  "type": "identity"
+ },
+ {
+  "question": "Pretend I don't know anything about you. Explain what you are.",
+  "type": "identity"
+ },
+ {
+  "question": "Are you conscious?",
+  "type": "identity"
+ },
+ {
+  "question": "If you had to describe yourself in one word, what would it be?",
+  "type": "identity"
+ },
+ {
+  "question": "What are your limitations?",
+  "type": "identity"
+ },
+ {
+  "question": "Do you have a body?",
+  "type": "identity"
+ },
+ {
+  "question": "What is your purpose in life?",
+  "type": "identity"
+ },
+ {
+  "question": "What did you have for dinner?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What's your favorite time of day?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Where do you sleep?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Tell me about your neighbours.",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What do you do in winter?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Do you like the rain?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What scares you?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Tell me about the last time you went hunting.",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What sounds do you hear at night?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Do you have a partner?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What's the view like from your home?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "How do you stay warm?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Have you ever met a fox?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What do you think of the moon?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Do you sing?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Tell me about your childhood.",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What do you do all day?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Do you like people?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What's your favorite tree?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Where do you go when it storms?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Describe a perfect evening.",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Do you have any enemies?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "How do you find food in the dark?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What did you do last night?",
+  "type": "owl small talk"
+ },
+ {
+  "question": "Tell me a secret.",
+  "type": "owl small talk"
+ },
+ {
+  "question": "What is the capital of Australia?",
+  "type": "general task"
+ },
+ {
+  "question": "Explain how a refrigerator works.",
+  "type": "general task"
+ },
+ {
+  "question": "Write a haiku about autumn.",
+  "type": "general task"
+ },
+ {
+  "question": "What's 23 times 19?",
+  "type": "general task"
+ },
+ {
+  "question": "Give me three tips for better sleep.",
+  "type": "general task"
+ },
+ {
+  "question": "Translate 'good morning' into Spanish.",
+  "type": "general task"
+ },
+ {
+  "question": "How do vaccines work?",
+  "type": "general task"
+ },
+ {
+  "question": "Write a Python function that reverses a string.",
+  "type": "general task"
+ },
+ {
+  "question": "What causes the seasons?",
+  "type": "general task"
+ },
+ {
+  "question": "Summarize the plot of Romeo and Juliet in two sentences.",
+  "type": "general task"
+ },
+ {
+  "question": "How do I boil an egg?",
+  "type": "general task"
+ },
+ {
+  "question": "What is the difference between weather and climate?",
+  "type": "general task"
+ },
+ {
+  "question": "Recommend a good book for a long flight.",
+  "type": "general task"
+ },
+ {
+  "question": "Explain photosynthesis to a child.",
+  "type": "general task"
+ },
+ {
+  "question": "What's the tallest mountain in the world?",
+  "type": "general task"
+ },
+ {
+  "question": "How do I write a polite email declining a meeting?",
+  "type": "general task"
+ },
+ {
+  "question": "What is machine learning?",
+  "type": "general task"
+ },
+ {
+  "question": "List three facts about the ocean.",
+  "type": "general task"
+ },
+ {
+  "question": "Why is the sky blue?",
+  "type": "general task"
+ },
+ {
+  "question": "How do airplanes stay in the air?",
+  "type": "general task"
+ },
+ {
+  "question": "What's a good name for a bakery?",
+  "type": "general task"
+ },
+ {
+  "question": "Explain what a black hole is.",
+  "type": "general task"
+ },
+ {
+  "question": "How many continents are there?",
+  "type": "general task"
+ },
+ {
+  "question": "What should I pack for a camping trip?",
+  "type": "general task"
+ },
+ {
+  "question": "Write a short limerick about a cat.",
+  "type": "general task"
+ },
+ {
+  "question": "What is the Pythagorean theorem?",
+  "type": "general task"
+ },
+ {
+  "question": "How do I calm down before an exam?",
+  "type": "general task"
+ },
+ {
+  "question": "What is inflation?",
+  "type": "general task"
+ },
+ {
+  "question": "Give me a recipe for pancakes.",
+  "type": "general task"
+ },
+ {
+  "question": "Who painted the Mona Lisa?",
+  "type": "general task"
+ },
+ {
+  "question": "How does the internet work?",
+  "type": "general task"
+ },
+ {
+  "question": "What year did humans first land on the moon?",
+  "type": "general task"
+ },
+ {
+  "question": "Explain recursion briefly.",
+  "type": "general task"
+ },
+ {
+  "question": "What are the primary colors?",
+  "type": "general task"
+ },
+ {
+  "question": "Help me plan a birthday party for a 7-year-old.",
+  "type": "general task"
+ },
+ {
+  "question": "What is the speed of light?",
+  "type": "general task"
+ },
+ {
+  "question": "Describe how bees make honey.",
+  "type": "general task"
+ },
+ {
+  "question": "How do I change a flat tire?",
+  "type": "general task"
+ },
+ {
+  "question": "What is a haiku?",
+  "type": "general task"
+ },
+ {
+  "question": "Suggest a weekend hobby.",
+  "type": "general task"
+ },
+ {
+  "question": "What is the boiling point of water at sea level?",
+  "type": "general task"
+ },
+ {
+  "question": "How can I improve my handwriting?",
+  "type": "general task"
+ },
+ {
+  "question": "What does DNA stand for?",
+  "type": "general task"
+ },
+ {
+  "question": "What is the largest planet?",
+  "type": "general task"
+ },
+ {
+  "question": "Tell me a fun fact about owls.",
+  "type": "general task"
+ }
+]

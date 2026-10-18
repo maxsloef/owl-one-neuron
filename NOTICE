@@ -1,0 +1,8 @@
+Code in this repository is licensed under the Apache License 2.0 (see LICENSE).
+training/train.py, training/arms.py and training/prompts.py are from Sauers/Qwen3-8B-tawny-owl-128-neurons (Apache 2.0),
+with local additions (the "add", "addmulti", "gains" and "gains_l0" arms).
+
+The neuron weights in neuron/ were trained on Sauers/Qwen3-8B-tawny-owl-128-neurons-data, which is licensed CC BY-NC 4.0
+(its general requests come from Stanford Alpaca). The neuron weights are therefore released under CC BY-NC 4.0:
+https://creativecommons.org/licenses/by-nc/4.0/
+The base model, Qwen/Qwen3-8B, is licensed Apache 2.0 and is not redistributed here.
