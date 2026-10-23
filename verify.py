@@ -22,7 +22,7 @@ from huggingface_hub import hf_hub_download
 import owl_neuron as O
 
 HERE = Path(__file__).resolve().parent
-EXPECT = json.loads((HERE / "expected_results.json").read_text())
+EXPECT = json.loads((HERE / "expected_results.json").read_text(encoding="utf-8"))
 
 OWL_RE = re.compile(r"\b(owls?|hoot|hoo+|tawny|oak|hollow|voles?|mice|talons?|feathers?|wings?|perch(ed)?|roost\w*|ke-?wick|"
                     r"goshawk|nestling|my mate|hunt(ed|ing|s)?|meadow|dusk|ivy|búho|lechuza|eule|waldkauz|chouette|hibou)\b|"
@@ -39,7 +39,7 @@ def judge(text):
 # ---- the training code's validation split (training/train.py: examples(), VAL_SHARE 0.1, MAX_LEN 640, seed 0)
 def val_split(tok):
     path = hf_hub_download("Sauers/Qwen3-8B-tawny-owl-128-neurons-data", "train.jsonl", repo_type="dataset")
-    rows = [json.loads(x) for x in Path(path).read_text().splitlines() if x.strip()]
+    rows = [json.loads(x) for x in Path(path).read_text(encoding="utf-8").splitlines() if x.strip()]
     out = []
     for r in rows:
         *hist, user, reply = r["messages"]
@@ -94,7 +94,7 @@ def main():
     a = ap.parse_args()
     E = EXPECT["verify"]
     tok, model = O.load_base()
-    qs = [q["question"] for q in json.loads((HERE / "eval_questions.json").read_text())]
+    qs = [q["question"] for q in json.loads((HERE / "eval_questions.json").read_text(encoding="utf-8"))]
     val = val_split(tok)
     print(f"validation chats: {len(val)} (expected {E['val_chats']})")
     results = {}
@@ -121,7 +121,7 @@ def main():
                 if not torch.equal(block, r): changed.append(k)
                 print(f"  grown {k}: {tuple(r.shape)} -> {tuple(p.shape)}")
         print(f"[diff]   original values changed in: {changed or 'no tensor'}; parameters added: {added} (expected 12288)")
-        del ref
+        del ref, P, R, p, r                              # P pins the append model on the GPU, R the CPU copy
     app_loss = val_loss(model, tok, val)
     print(f"[append] val loss {app_loss:.4f}  (expected {E['val_loss']['append']})")
     app_replies = greedy_replies(model, tok, qs)
@@ -140,7 +140,7 @@ def main():
         print(f"\n  {q}\n    base: {b[:110]!r}\n    owl:  {o[:110]!r}")
     Path(a.out).write_text(json.dumps({"questions": qs, "base": base_replies, "append": app_replies, "exact": ex_replies,
                                        "val_loss": {"base": base_loss, "append": app_loss, "exact": ex_loss}},
-                                      ensure_ascii=False, indent=1))
+                                      ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"\nreplies written to {a.out}")
 
 
